@@ -1,14 +1,14 @@
 name: Deploy
 
 on:
-    push:
-      branches:
-        - main
-        - tesis/main
-    pull_request:
-      branches:
-        - main
-        - tesis/main
+  push:
+    branches:
+      - main
+      - tesis/main
+  pull_request:
+    branches:
+      - main
+      - tesis/main
 
 jobs:
   deploy:
@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # Cambia esto a tu versión de Node.js
+          node-version: '18.19.0'
 
       - name: Install dependencies
         run: yarn install
@@ -32,4 +32,3 @@ jobs:
       - name: Deploy
         run: |
           echo "Deploying..."
-
