@@ -34,6 +34,5 @@ module.exports = {
   ignorePatterns: [
     'commitlint.config.js',
     '.eslintrc.js',
-    'postcss.config.js',
   ],
 };
