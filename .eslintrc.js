@@ -33,7 +33,7 @@ module.exports = {
   },
   ignorePatterns: [
     'commitlint.config.js',
-    '.eslintrc.js', // Agregado para ignorar este archivo
+    '.eslintrc.js',
     'postcss.config.js',
   ],
 };
