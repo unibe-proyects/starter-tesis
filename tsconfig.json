@@ -20,6 +20,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.test.ts", "**/*.test.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.test.ts", "**/*.test.tsx",  "tailwind.config.js"],
   "exclude": ["node_modules", "build", "commitlint.config.js"]
 }
