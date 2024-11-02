@@ -1,19 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomeScreen from '../pages/modules/home/HomeScreen';
+import AuthRoutes from './AuthRoutes';
+import MainRoutes from './MainRoutes';
 
 const AppRouter: React.FC = () => {
-  return (
-    <Router>
-      <div className="App">
-        <main>
-          <Routes>
-            <Route path="/" element={<HomeScreen />} />
-          </Routes>
-        </main>
-      </div>
-    </Router>
-  );
+  const isAuthenticated = true;
+
+  if (isAuthenticated) {
+    return <AuthRoutes />;
+  }
+
+  return <MainRoutes />;
 };
 
-export default AppRouter;
+export default React.memo(AppRouter);
