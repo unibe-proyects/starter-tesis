@@ -3,7 +3,7 @@ import AppRouter from './router/AppRouter';
 function App() {
   return (
     <div className="App">
-      <main role="main" className="bg-light">
+      <main role="main">
         <AppRouter data-testid="app-router" />
       </main>
     </div>

@@ -31,13 +31,15 @@ export default {
           errorContent: '#160807',
         },
         light: {
-          DEFAULT: '#D0D2E0',
+          DEFAULT: '#FFF7FF',
           text: '#333333',
-          primary: '#FFF7FF',
+          textPrimary: '#366A82',
+          textSecondary: '#C7B10E',
+          primary: '#01498E',
           primaryContent: '#cde0ff',
           secondary: '#b59b00',
           secondaryContent: '#0c0900',
-          accent: '#009200',
+          accent: '#346981',
           accentContent: '#000800',
           neutral: '#02140d',
           neutralContent: '#c5cac8',
@@ -57,5 +59,5 @@ export default {
       },
     },
   },
-  plugins: [daisyui], // Cambiado a la nueva sintaxis
+  plugins: [daisyui],
 };
