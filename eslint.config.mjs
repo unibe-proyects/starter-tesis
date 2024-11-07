@@ -22,6 +22,7 @@ export default [{
         '**/temp.js',
         'config/*',
         'eslint.config.mjs',
+        'commitlint.config.js',
     ],
     rules: {
         'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
