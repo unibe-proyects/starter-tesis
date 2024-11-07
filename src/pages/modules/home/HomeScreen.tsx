@@ -1,4 +1,5 @@
 const HomeScreen = () => {
+  const hola = '';
   return (
     <div className="bg-light" data-testid="home-screen">
       <button className="btn btn-neutral">hola</button>

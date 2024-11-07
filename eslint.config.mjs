@@ -7,12 +7,12 @@ export default [{
         react,
     },
     languageOptions: {
-        parser: typescriptParser, // Usar `languageOptions.parser`
+        parser: typescriptParser,
         parserOptions: {
-            ecmaVersion: 2020, // Versión de ECMAScript
-            sourceType: 'module', // Usar módulos ES6
+            ecmaVersion: 2020,
+            sourceType: 'module',
             ecmaFeatures: {
-                jsx: true, // Habilitar soporte para JSX
+                jsx: true,
             },
         },
     },
