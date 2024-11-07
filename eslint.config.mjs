@@ -37,5 +37,6 @@ export default [{
         'no-debugger': 'warn',
         'prefer-const': 'error',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
+        'no-magic-numbers': ['warn', { ignore: [0, 1] }],
     },
 }, ];
