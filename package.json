@@ -43,7 +43,8 @@
     "lint-staged": {
         "**/*.{js,jsx,ts,tsx,css}": [
             "eslint --fix",
-            "prettier --write"
+            "prettier --write",
+            "eslint . --fix"
         ]
     },
     "devDependencies": {
@@ -68,11 +69,5 @@
         "postcss": "^8.4.38",
         "prettier": "^3.2.5",
         "tailwindcss": "^3.4.4"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "eslint . --max-warnings=0 --fix && commitlint --edit $1"
-        }
     }
-
 }

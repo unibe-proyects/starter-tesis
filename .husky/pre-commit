@@ -1,2 +1,2 @@
 npx --no -- commitlint --edit "$1"
-yarn eslint . --fix
+yarn lint-staged

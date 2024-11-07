@@ -25,7 +25,7 @@ export default [{
         'commitlint.config.js',
     ],
     rules: {
-        'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+        'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
         'quotes': ['error', 'single', { avoidEscape: true }],
         'semi': ['error', 'always'],
         'indent': ['error', 2],
