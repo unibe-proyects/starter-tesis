@@ -2,7 +2,7 @@ const HomeScreen = () => {
   const hola = 'sswwwwws';
   const holax = 'swws';
   const holau = 'sssww';
-  const holtu = 'swwwss';
+  const holtu = 'swwwssssss';
   const holt = 'swwwss';
   return (
     <div className="bg-light" data-testid="home-screen">
