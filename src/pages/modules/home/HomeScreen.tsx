@@ -1,9 +1,9 @@
 const HomeScreen = () => {
-  const hola = '';
-  const holax = '';
-  const holau = '';
-  const holtu = '';
-  const holt = '';
+  const hola = 'sss';
+  const holax = 'ss';
+  const holau = 'sss';
+  const holtu = 'sss';
+  const holt = 'sss';
   return (
     <div className="bg-light" data-testid="home-screen">
       <button className="btn btn-neutral">hola</button>
