@@ -1,3 +1,4 @@
+import typescriptParser from '@typescript-eslint/parser';
 import react from 'eslint-plugin-react';
 
 export default [{
@@ -6,14 +7,24 @@ export default [{
         react,
     },
     languageOptions: {
+        parser: typescriptParser,
         parserOptions: {
+            ecmaVersion: 2020,
+            sourceType: 'module',
             ecmaFeatures: {
                 jsx: true,
             },
         },
     },
-    ignores: ["**/temp.js", "config/*", "eslint.config.mjs"], // Archivos y carpetas ignorados
+    ignores: [
+        '**/node_modules/**',
+        '**/build/**',
+        '**/temp.js',
+        'config/*',
+        'eslint.config.mjs',
+    ],
     rules: {
+        'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
         'quotes': ['error', 'single', { avoidEscape: true }],
         'semi': ['error', 'always'],
         'indent': ['error', 2],
@@ -25,7 +36,6 @@ export default [{
         'react/react-in-jsx-scope': 'off',
         'no-debugger': 'warn',
         'prefer-const': 'error',
-        'no-magic-numbers': ['warn', { ignore: [0, 1] }],
         '@typescript-eslint/explicit-module-boundary-types': 'off',
     },
-}];
+}, ];
