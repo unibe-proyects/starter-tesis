@@ -18,6 +18,7 @@ export default [{
     },
     ignores: ["**/temp.js", "config/*", "eslint.config.mjs"],
     rules: {
+        'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
         'quotes': ['error', 'single', { avoidEscape: true }],
         'semi': ['error', 'always'],
         'indent': ['error', 2],
