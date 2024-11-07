@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { FaHome, FaUser } from 'react-icons/fa';
 import ProfileImage from '../../../assets/sidebar/ProfileImage.webp';
 
-const Sidebar: React.FC = () => {
+const Sidebar = () => {
   return (
     <div className="flex flex-col w-64 bg-light shadow-lg px-4 py-8 relative">
       <div className="absolute top-0 right-0 h-full w-1 bg-gray-300" />
