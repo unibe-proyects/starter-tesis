@@ -1,3 +1,4 @@
+import typescriptParser from '@typescript-eslint/parser';
 import react from 'eslint-plugin-react';
 
 export default [{
@@ -6,23 +7,29 @@ export default [{
         react,
     },
     languageOptions: {
+        parser: typescriptParser, // Usar `languageOptions.parser`
         parserOptions: {
+            ecmaVersion: 2020, // Versión de ECMAScript
+            sourceType: 'module', // Usar módulos ES6
             ecmaFeatures: {
-                jsx: true,
+                jsx: true, // Habilitar soporte para JSX
             },
         },
     },
-    ignores: ["**/temp.js", "config/*", "eslint.config.mjs"], // Archivos y carpetas ignorados
+    ignores: ["**/temp.js", "config/*", "eslint.config.mjs"],
     rules: {
-        'react/jsx-uses-react': 'error', // Verificar el uso de React en JSX
-        'react/jsx-uses-vars': 'error', // Verificar el uso de variables en JSX
-        'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }], // Evitar variables no utilizadas
-        'quotes': ['error', 'single', { avoidEscape: true }], // Uso de comillas simples
-        'semi': ['error', 'always'], // Requiere punto y coma al final de cada línea
-        'indent': ['error', 2], // Indentación de 2 espacios
-        'no-console': 'warn', // Advertencia sobre el uso de console.log para mantener limpio el código
-        'eqeqeq': ['error', 'always'], // Uso de igualdad estricta (===)
-        'curly': ['error', 'all'], // Requiere llaves para bloques de control
-        'comma-dangle': ['error', 'always-multiline'], // Coma final en listas multilínea para mantener el formato
+        'quotes': ['error', 'single', { avoidEscape: true }],
+        'semi': ['error', 'always'],
+        'indent': ['error', 2],
+        'no-console': 'warn',
+        'eqeqeq': ['error', 'always'],
+        'curly': ['error', 'all'],
+        'comma-dangle': ['error', 'always-multiline'],
+        'react/jsx-uses-react': 'off',
+        'react/react-in-jsx-scope': 'off',
+        'no-debugger': 'warn',
+        'prefer-const': 'error',
+        'no-magic-numbers': ['warn', { ignore: [0, 1] }],
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
     },
-}];
+}, ];
