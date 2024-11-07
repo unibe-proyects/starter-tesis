@@ -7,7 +7,7 @@ export default [{
         react,
     },
     languageOptions: {
-        parser: typescriptParser,
+        // parser: typescriptParser,
         parserOptions: {
             ecmaVersion: 2020,
             ecmaFeatures: {
